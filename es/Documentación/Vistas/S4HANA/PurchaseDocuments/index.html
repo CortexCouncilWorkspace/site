@@ -1,0 +1,7510 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ccwlatam.cloud/Documentaci%C3%B3n/Vistas/S4HANA/PurchaseDocuments/">
+      
+      
+        <link rel="prev" href="../PurchaseDocumentTypesMD/">
+      
+      
+        <link rel="next" href="../PurchaseDocumentsHistory/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon_ccw_blue.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.14">
+    
+    
+      
+        <title>PurchaseDocuments - Cortex Council Workspace</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.10ba22f1.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7COpen+Sans:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Open Sans"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-FTV80RFCXY"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-FTV80RFCXY",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-FTV80RFCXY",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#purchasedocuments" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../../.." title="Cortex Council Workspace" class="md-header__button md-logo" aria-label="Cortex Council Workspace" data-md-component="logo">
+      
+  <img src="../../../../assets/images/logo_ccw_white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cortex Council Workspace
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              PurchaseDocuments
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Seleccionar idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/pt-BR/" hreflang="pt-BR" class="md-select__link">
+              Portuguese
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/es/" hreflang="es" class="md-select__link">
+              Spanish
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CortexCouncilWorkspace" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CortexCouncilWorkspace
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Cortex Council Workspace" class="md-nav__button md-logo" aria-label="Cortex Council Workspace" data-md-component="logo">
+      
+  <img src="../../../../assets/images/logo_ccw_white.png" alt="logo">
+
+    </a>
+    Cortex Council Workspace
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CortexCouncilWorkspace" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CortexCouncilWorkspace
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Conceptos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Conceptos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Conceptos/ERD_Diagram/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cortex - Diagrama entidad-relación (ERD)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Documentación
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Documentación
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Vistas
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Vistas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_1" id="__nav_3_1_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    ECC
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            ECC
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/AccountingDocuments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AccountingDocuments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/AccountingDocumentsReceivable/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AccountingDocumentsReceivable
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/AccountsPayable/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AccountsPayable
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/AccountsPayableOverview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AccountsPayableOverview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/AccountsPayableTurnover/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AccountsPayableTurnover
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/AddressesMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AddressesMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/BalanceSheet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BalanceSheet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/BatchesMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BatchesMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/BillOfMaterialsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BillOfMaterialsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/Billing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Billing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/BillingBlockingReasonsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BillingBlockingReasonsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/BusinessPartnersMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BusinessPartnersMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/CashDiscountUtilization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CashDiscountUtilization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/CompaniesMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CompaniesMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/CostCenterAmountsHierarchy_SAMPLE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CostCenterAmountsHierarchy_SAMPLE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/CostCentersMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CostCentersMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/CountriesMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CountriesMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/CurrenciesMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CurrenciesMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/CurrencyConvUtil/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CurrencyConvUtil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/CurrencyConversion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CurrencyConversion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/CustomerClearedItems_BSAD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CustomerClearedItems_BSAD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/CustomerOpenItems_BSID/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CustomerOpenItems_BSID
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/CustomersMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CustomersMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/DaysPayableOutstanding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DaysPayableOutstanding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/Deliveries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deliveries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/DeliveriesStatus_PerSalesOrg/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DeliveriesStatus_PerSalesOrg
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/DeliveryBlockingReasonsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DeliveryBlockingReasonsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/DistributionChannelsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DistributionChannelsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/DivisionsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DivisionsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/FSVTextsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FSVTextsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/FinancialStatement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FinancialStatement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/GLAccountsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GLAccountsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/InventoryByPlant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    InventoryByPlant
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/InventoryKeyMetrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    InventoryKeyMetrics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/InvoiceDocuments_Flow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    InvoiceDocuments_Flow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/Languages_T002/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Languages_T002
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/LedgersMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LedgersMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/MaterialGroupsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MaterialGroupsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/MaterialLedger/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MaterialLedger
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/MaterialMovementTypesMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MaterialMovementTypesMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/MaterialPlantsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MaterialPlantsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/MaterialTypesMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MaterialTypesMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/MaterialsBatchMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MaterialsBatchMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/MaterialsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MaterialsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/MaterialsMovement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MaterialsMovement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/MaterialsValuation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MaterialsValuation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/OneTouchOrder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OneTouchOrder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/OrderToCash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OrderToCash
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/POFulfillment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    POFulfillment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/POOrderHistory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    POOrderHistory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/POSchedule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    POSchedule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/POScheduleLine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    POScheduleLine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/POVendorConfirmation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    POVendorConfirmation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/PlantsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PlantsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/PricingConditions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PricingConditions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/ProductHierarchiesMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ProductHierarchiesMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/ProductHierarchy_Flatten/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ProductHierarchy_Flatten
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/ProductionOrders/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ProductionOrders
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/ProfitAndLoss/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ProfitAndLoss
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/ProfitCenterAmountsHierarchy_SAMPLE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ProfitCenterAmountsHierarchy_SAMPLE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/ProfitCentersMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ProfitCentersMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/PurchaseDocumentTypesMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PurchaseDocumentTypesMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/PurchaseDocuments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PurchaseDocuments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/PurchaseDocumentsHistory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PurchaseDocumentsHistory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/PurchaseDocuments_Flow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PurchaseDocuments_Flow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/PurchasingGroupsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PurchasingGroupsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/PurchasingOrganizationsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PurchasingOrganizationsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/ReasonForMovementTypesMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReasonForMovementTypesMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/RegionsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RegionsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/Regions_T005S/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regions_T005S
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/SDDocumentFlow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SDDocumentFlow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/SDStatus_Items/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SDStatus_Items
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/SalesFulfillment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesFulfillment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/SalesFulfillment_perOrder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesFulfillment_perOrder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/SalesOrderDetails_SAMPLE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesOrderDetails_SAMPLE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/SalesOrderHeaderStatus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesOrderHeaderStatus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/SalesOrderPartnerFunction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesOrderPartnerFunction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/SalesOrderPricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesOrderPricing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/SalesOrderScheduleLine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesOrderScheduleLine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/SalesOrderStatus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesOrderStatus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/SalesOrders/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesOrders
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/SalesOrders_V2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesOrders_V2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/SalesOrganizationsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesOrganizationsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/SalesStatus_Items/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesStatus_Items
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/SpecialStocksMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SpecialStocksMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/StockInHand/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    StockInHand
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/StockMonthlySnapshots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    StockMonthlySnapshots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/StockWeeklySnapshots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    StockWeeklySnapshots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/Stock_NonValuated/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stock_NonValuated
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/Stock_PerPlant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stock_PerPlant
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/Stock_Unrestricted_vs_Sales/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stock_Unrestricted_vs_Sales
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/StorageLocationsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    StorageLocationsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/TelephoneCodes_T005K/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelephoneCodes_T005K
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/UoMConversion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UoMConversion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/UoMConversionUtil/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UoMConversionUtil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/UoMMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UoMMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/UoMUsage_SAMPLE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UoMUsage_SAMPLE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/ValuationAreasMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ValuationAreasMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/VendorConfig/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VendorConfig
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/VendorLeadTimeOverview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VendorLeadTimeOverview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/VendorPerformance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VendorPerformance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/VendorPerformanceOverview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VendorPerformanceOverview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/VendorsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VendorsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/currency_conversion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    currency_conversion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/currency_decimal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    currency_decimal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/fiscal_case2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    fiscal_case2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/fiscal_case3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    fiscal_case3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECC/fiscal_period/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    fiscal_period
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_2" id="__nav_3_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    S4HANA
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            S4HANA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AccountingDocuments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AccountingDocuments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AccountingDocumentsReceivable/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AccountingDocumentsReceivable
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AccountsPayable/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AccountsPayable
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AccountsPayableOverview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AccountsPayableOverview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AccountsPayableTurnover/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AccountsPayableTurnover
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AddressesMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AddressesMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BalanceSheet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BalanceSheet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BatchesMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BatchesMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BillOfMaterialsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BillOfMaterialsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Billing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Billing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BillingBlockingReasonsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BillingBlockingReasonsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BusinessPartnersMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BusinessPartnersMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CashDiscountUtilization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CashDiscountUtilization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CompaniesMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CompaniesMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CostCenterAmountsHierarchy_SAMPLE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CostCenterAmountsHierarchy_SAMPLE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CostCentersMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CostCentersMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CountriesMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CountriesMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CurrenciesMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CurrenciesMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CurrencyConvUtil/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CurrencyConvUtil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CurrencyConversion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CurrencyConversion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CustomerClearedItems_BSAD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CustomerClearedItems_BSAD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CustomerOpenItems_BSID/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CustomerOpenItems_BSID
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CustomersMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CustomersMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DaysPayableOutstanding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DaysPayableOutstanding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Deliveries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deliveries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DeliveriesStatus_PerSalesOrg/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DeliveriesStatus_PerSalesOrg
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DeliveryBlockingReasonsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DeliveryBlockingReasonsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DistributionChannelsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DistributionChannelsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DivisionsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DivisionsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FSVTextsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FSVTextsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FinancialStatement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FinancialStatement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GLAccountsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GLAccountsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../InventoryByPlant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    InventoryByPlant
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../InventoryKeyMetrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    InventoryKeyMetrics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../InvoiceDocuments_Flow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    InvoiceDocuments_Flow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Languages_T002/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Languages_T002
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LedgersMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LedgersMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MaterialGroupsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MaterialGroupsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MaterialLedger/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MaterialLedger
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MaterialMovementTypesMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MaterialMovementTypesMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MaterialPlantsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MaterialPlantsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MaterialTypesMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MaterialTypesMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MaterialsBatchMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MaterialsBatchMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MaterialsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MaterialsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MaterialsMovement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MaterialsMovement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MaterialsValuation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MaterialsValuation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OneTouchOrder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OneTouchOrder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OrderToCash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OrderToCash
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../POFulfillment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    POFulfillment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../POOrderHistory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    POOrderHistory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../POSchedule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    POSchedule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../POScheduleLine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    POScheduleLine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../POVendorConfirmation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    POVendorConfirmation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PlantsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PlantsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PricingConditions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PricingConditions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ProductHierarchiesMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ProductHierarchiesMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ProductHierarchy_Flatten/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ProductHierarchy_Flatten
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ProductionOrders/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ProductionOrders
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ProfitAndLoss/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ProfitAndLoss
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ProfitCenterAmountsHierarchy_SAMPLE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ProfitCenterAmountsHierarchy_SAMPLE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ProfitCentersMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ProfitCentersMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PurchaseDocumentTypesMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PurchaseDocumentTypesMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    PurchaseDocuments
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    PurchaseDocuments
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#archivo-sql-de-origen-google-cloud-cortex-data-foundation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Archivo SQL de origen: Google Cloud Cortex Data Foundation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descripcion-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción general
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuentes-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fuentes de datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#casos-de-uso-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Casos de uso clave
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logica-de-consulta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lógica de consulta
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#posible-relacion-con-sap-transactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Posible relación con SAP Transactions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linaje-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linaje de datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#campos-de-tablavista" class="md-nav__link">
+    <span class="md-ellipsis">
+      Campos de tabla/vista
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PurchaseDocumentsHistory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PurchaseDocumentsHistory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PurchaseDocuments_Flow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PurchaseDocuments_Flow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PurchasingGroupsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PurchasingGroupsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PurchasingOrganizationsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PurchasingOrganizationsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ReasonForMovementTypesMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReasonForMovementTypesMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RegionsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RegionsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Regions_T005S/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regions_T005S
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SDDocumentFlow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SDDocumentFlow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SDStatus_Items/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SDStatus_Items
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SalesFulfillment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesFulfillment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SalesFulfillment_perOrder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesFulfillment_perOrder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SalesOrderDetails_SAMPLE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesOrderDetails_SAMPLE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SalesOrderHeaderStatus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesOrderHeaderStatus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SalesOrderPartnerFunction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesOrderPartnerFunction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SalesOrderPricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesOrderPricing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SalesOrderScheduleLine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesOrderScheduleLine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SalesOrderStatus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesOrderStatus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SalesOrders/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesOrders
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SalesOrders_V2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesOrders_V2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SalesOrganizationsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesOrganizationsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SalesStatus_Items/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SalesStatus_Items
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SpecialStocksMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SpecialStocksMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../StockInHand/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    StockInHand
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../StockMonthlySnapshots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    StockMonthlySnapshots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../StockWeeklySnapshots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    StockWeeklySnapshots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Stock_NonValuated/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stock_NonValuated
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Stock_PerPlant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stock_PerPlant
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Stock_Unrestricted_vs_Sales/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stock_Unrestricted_vs_Sales
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../StorageLocationsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    StorageLocationsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelephoneCodes_T005K/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelephoneCodes_T005K
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UoMConversion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UoMConversion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UoMConversionUtil/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UoMConversionUtil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UoMMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UoMMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UoMUsage_SAMPLE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UoMUsage_SAMPLE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ValuationAreasMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ValuationAreasMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VendorConfig/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VendorConfig
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VendorLeadTimeOverview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VendorLeadTimeOverview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VendorPerformance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VendorPerformance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VendorPerformanceOverview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VendorPerformanceOverview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VendorsMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VendorsMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../currency_conversion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    currency_conversion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../currency_decimal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    currency_decimal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fiscal_case2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    fiscal_case2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fiscal_case3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    fiscal_case3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fiscal_period/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    fiscal_period
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#archivo-sql-de-origen-google-cloud-cortex-data-foundation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Archivo SQL de origen: Google Cloud Cortex Data Foundation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descripcion-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción general
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuentes-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fuentes de datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#casos-de-uso-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Casos de uso clave
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logica-de-consulta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lógica de consulta
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#posible-relacion-con-sap-transactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Posible relación con SAP Transactions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linaje-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linaje de datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#campos-de-tablavista" class="md-nav__link">
+    <span class="md-ellipsis">
+      Campos de tabla/vista
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="purchasedocuments">PurchaseDocuments</h1>
+<h2 id="archivo-sql-de-origen-google-cloud-cortex-data-foundation">Archivo SQL de origen: Google Cloud Cortex Data Foundation</h2>
+<p>Google Cloud Cortex Foudantion - Cortex Reporting - (s4) - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/PurchaseDocuments.sql">PurchaseDocuments</a></p>
+<h2 id="descripcion-general">Descripción general</h2>
+<p>Esta vista es una vista de informes para sistemas SAP que combina datos de las tablas EKPO y EKKO. Proporciona una vista completa de los datos de la orden de compra, incluidos los detalles a nivel de artículo, los detalles a nivel de encabezado e información adicional de las tablas relacionadas.</p>
+<h2 id="fuentes-de-datos">Fuentes de datos</h2>
+<table>
+<thead>
+<tr>
+<th>Tabla/vista de origen</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ekpo</td>
+<td>Datos a nivel de artículo para órdenes de compra, que incluyen cantidad, precio e información de entrega.</td>
+</tr>
+<tr>
+<td>ekko</td>
+<td>Datos a nivel de encabezado para órdenes de compra, que incluyen información del proveedor, tipo de documento y condiciones de pago.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="casos-de-uso-clave">Casos de uso clave</h2>
+<ul>
+<li>Se puede utilizar para analizar datos de órdenes de compra a nivel de artículo o encabezado.</li>
+<li>Se puede utilizar para rastrear el estado de las órdenes de compra y sus artículos.</li>
+<li>Se puede utilizar para identificar tendencias y patrones en el comportamiento de compra.</li>
+</ul>
+<h2 id="logica-de-consulta">Lógica de consulta</h2>
+<p>La vista se crea utilizando una unión izquierda entre las tablas EKPO y EKKO. La unión se realiza en los campos MANDT y EBELN, que son el cliente y el número de orden de compra, respectivamente. También se incluyen campos adicionales de tablas relacionadas en la vista mediante uniones izquierdas.</p>
+<h2 id="posible-relacion-con-sap-transactions">Posible relación con SAP Transactions</h2>
+<table>
+<thead>
+<tr>
+<th>Codigo de transacción</th>
+<th>Descripción de la transacción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ME21N</td>
+<td>Crear orden de compra</td>
+</tr>
+<tr>
+<td>ME22N</td>
+<td>Cambiar orden de compra</td>
+</tr>
+<tr>
+<td>ME23N</td>
+<td>Mostrar orden de compra</td>
+</tr>
+<tr>
+<td>ME28</td>
+<td>Liberar orden de compra</td>
+</tr>
+<tr>
+<td>ME29N</td>
+<td>Mostrar historial de orden de compra</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linaje-de-datos">Linaje de datos</h2>
+<p>Em desarollo</p>
+<h2 id="campos-de-tablavista">Campos de tabla/vista</h2>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Descripción del campo</th>
+<th>Descripción del Diccionario SAP (Em breve)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Client_MANDT</td>
+<td>Client</td>
+<td></td>
+</tr>
+<tr>
+<td>DocumentNumber_EBELN</td>
+<td>Document Number</td>
+<td></td>
+</tr>
+<tr>
+<td>Item_EBELP</td>
+<td>Item</td>
+<td></td>
+</tr>
+<tr>
+<td>DeletionFlag_LOEKZ</td>
+<td>Deletion Flag</td>
+<td></td>
+</tr>
+<tr>
+<td>Company_BUKRS</td>
+<td>Company</td>
+<td></td>
+</tr>
+<tr>
+<td>DocumentCategory_BSTYP</td>
+<td>Document Category</td>
+<td></td>
+</tr>
+<tr>
+<td>DocumentType_BSART</td>
+<td>Document Type</td>
+<td></td>
+</tr>
+<tr>
+<td>ControlFlag_BSAKZ</td>
+<td>Control Flag</td>
+<td></td>
+</tr>
+<tr>
+<td>DeletionFlagHdr_LOEKZ</td>
+<td>Deletion Flag Header</td>
+<td></td>
+</tr>
+<tr>
+<td>Status_STATU</td>
+<td>Status</td>
+<td></td>
+</tr>
+<tr>
+<td>CreatedOn_AEDAT</td>
+<td>Created On</td>
+<td></td>
+</tr>
+<tr>
+<td>CreatedBy_ERNAM</td>
+<td>Created By</td>
+<td></td>
+</tr>
+<tr>
+<td>ItemNumberInterval_PINCR</td>
+<td>Item Number Interval</td>
+<td></td>
+</tr>
+<tr>
+<td>LastItemNumber_LPONR</td>
+<td>Last Item Number</td>
+<td></td>
+</tr>
+<tr>
+<td>VendorAccountNumber_LIFNR</td>
+<td>Vendor Account Number</td>
+<td></td>
+</tr>
+<tr>
+<td>Language_SPRAS</td>
+<td>Language</td>
+<td></td>
+</tr>
+<tr>
+<td>TermsPaymentKey_ZTERM</td>
+<td>Terms Payment Key</td>
+<td></td>
+</tr>
+<tr>
+<td>DiscountDays1_ZBD1T</td>
+<td>Discount Days 1</td>
+<td></td>
+</tr>
+<tr>
+<td>DiscountDays2_ZBD2T</td>
+<td>Discount Days 2</td>
+<td></td>
+</tr>
+<tr>
+<td>DiscountDays3_ZBD3T</td>
+<td>Discount Days 3</td>
+<td></td>
+</tr>
+<tr>
+<td>CashDiscountPercentage1_ZBD1P</td>
+<td>Cash Discount Percentage 1</td>
+<td></td>
+</tr>
+<tr>
+<td>CashDiscountPercentage2_ZBD2P</td>
+<td>Cash Discount Percentage 2</td>
+<td></td>
+</tr>
+<tr>
+<td>PurchasingOrganization_EKORG</td>
+<td>Purchasing Organization</td>
+<td></td>
+</tr>
+<tr>
+<td>PurchasingGroup_EKGRP</td>
+<td>Purchasing Group</td>
+<td></td>
+</tr>
+<tr>
+<td>CurrencyKey_WAERS</td>
+<td>Currency Key</td>
+<td></td>
+</tr>
+<tr>
+<td>ExchangeRate_WKURS</td>
+<td>Exchange Rate</td>
+<td></td>
+</tr>
+<tr>
+<td>FlagFixingExchangeRate_KUFIX</td>
+<td>Flag Fixing Exchange Rate</td>
+<td></td>
+</tr>
+<tr>
+<td>PurchasingDocumentDate_BEDAT</td>
+<td>Purchasing Document Date</td>
+<td></td>
+</tr>
+<tr>
+<td>StartValidityPeriod_KDATB</td>
+<td>Start Validity Period</td>
+<td></td>
+</tr>
+<tr>
+<td>EndValidityPeriod_KDATE</td>
+<td>End Validity Period</td>
+<td></td>
+</tr>
+<tr>
+<td>ClosingDateforApplications_BWBDT</td>
+<td>Closing Date for Applications</td>
+<td></td>
+</tr>
+<tr>
+<td>Deadline_ANGDT</td>
+<td>Deadline</td>
+<td></td>
+</tr>
+<tr>
+<td>BindingPeriodforQuotation_BNDDT</td>
+<td>Binding Period for Quotation</td>
+<td></td>
+</tr>
+<tr>
+<td>WarrantyDate_GWLDT</td>
+<td>Warranty Date</td>
+<td></td>
+</tr>
+<tr>
+<td>Bidinvitationnumber_AUSNR</td>
+<td>Bid invitation number</td>
+<td></td>
+</tr>
+<tr>
+<td>QuotationNumber_ANGNR</td>
+<td>Quotation Number</td>
+<td></td>
+</tr>
+<tr>
+<td>QuotationSubmissionDate_IHRAN</td>
+<td>Quotation Submission Date</td>
+<td></td>
+</tr>
+<tr>
+<td>YourReference_IHREZ</td>
+<td>Your Reference</td>
+<td></td>
+</tr>
+<tr>
+<td>VendorSalesperson_VERKF</td>
+<td>Vendor Salesperson</td>
+<td></td>
+</tr>
+<tr>
+<td>VendorTelephone_TELF1</td>
+<td>Vendor Telephone</td>
+<td></td>
+</tr>
+<tr>
+<td>SupplyingVendor_LLIEF</td>
+<td>Supplying Vendor</td>
+<td></td>
+</tr>
+<tr>
+<td>Customer_KUNNR</td>
+<td>Customer</td>
+<td></td>
+</tr>
+<tr>
+<td>PrincipalPurchaseAgreement_KONNR</td>
+<td>Principal Purchase Agreement</td>
+<td></td>
+</tr>
+<tr>
+<td>CompleteDeliveryStipulated_AUTLF</td>
+<td>Complete Delivery Stipulated</td>
+<td></td>
+</tr>
+<tr>
+<td>GoodsReceiptMsgFlag_WEAKT</td>
+<td>Goods Receipt Msg Flag</td>
+<td></td>
+</tr>
+<tr>
+<td>SupplyTransportOrders_RESWK</td>
+<td>Supply Transport Orders</td>
+<td></td>
+</tr>
+<tr>
+<td>AreaPerDistributionValue_KTWRT</td>
+<td>Area Per Distribution Value</td>
+<td></td>
+</tr>
+<tr>
+<td>CollectiveNumber_SUBMI</td>
+<td>Collective Number</td>
+<td></td>
+</tr>
+<tr>
+<td>Numberthedocumentcondition_KNUMV</td>
+<td>Number the document condition</td>
+<td></td>
+</tr>
+<tr>
+<td>Procedure_KALSM</td>
+<td>Procedure</td>
+<td></td>
+</tr>
+<tr>
+<td>UpdateGroupStatistics_STAFO</td>
+<td>Update Group Statistics</td>
+<td></td>
+</tr>
+<tr>
+<td>DifferentInvoicingParty_LIFRE</td>
+<td>Different Invoicing Party</td>
+<td></td>
+</tr>
+<tr>
+<td>ForeignTradeDocument_EXNUM</td>
+<td>Foreign Trade Document</td>
+<td></td>
+</tr>
+<tr>
+<td>OurReference_UNSEZ</td>
+<td>Our Reference</td>
+<td></td>
+</tr>
+<tr>
+<td>LogicalSystem_LOGSY</td>
+<td>Logical System</td>
+<td></td>
+</tr>
+<tr>
+<td>ItemNumberInterval_UPINC</td>
+<td>Item Number Interval</td>
+<td></td>
+</tr>
+<tr>
+<td>TimeDependentConditions_STAKO</td>
+<td>Time Dependent Conditions</td>
+<td></td>
+</tr>
+<tr>
+<td>Releasegroup_FRGGR</td>
+<td>Release group</td>
+<td></td>
+</tr>
+<tr>
+<td>ReleaseStrategy_FRGSX</td>
+<td>Release Strategy</td>
+<td></td>
+</tr>
+<tr>
+<td>PurchasingDocumentRelease_FRGKE</td>
+<td>Purchasing Document Release</td>
+<td></td>
+</tr>
+<tr>
+<td>ReleaseStatus_FRGZU</td>
+<td>Release Status</td>
+<td></td>
+</tr>
+<tr>
+<td>ReleaseIncomplete_FRGRL</td>
+<td>Release Incomplete</td>
+<td></td>
+</tr>
+<tr>
+<td>CountryforTaxReturn_LANDS</td>
+<td>Country for Tax Return</td>
+<td></td>
+</tr>
+<tr>
+<td>SchedulingAgreement_LPHIS</td>
+<td>Scheduling Agreement</td>
+<td></td>
+</tr>
+<tr>
+<td>Address_ADRNR</td>
+<td>Address</td>
+<td></td>
+</tr>
+<tr>
+<td>CountrySalesTaxIDNumber_STCEG_L</td>
+<td>Country Sales Tax ID Number</td>
+<td></td>
+</tr>
+<tr>
+<td>VATRegistrationNumber_STCEG</td>
+<td>VAT Registration Number</td>
+<td></td>
+</tr>
+<tr>
+<td>ReasonforCancellation_ABSGR</td>
+<td>Reason for Cancellation</td>
+<td></td>
+</tr>
+<tr>
+<td>AdditionalDocument_ADDNR</td>
+<td>Additional Document</td>
+<td></td>
+</tr>
+<tr>
+<td>CorrectionMiscProvisions_KORNR</td>
+<td>Correction Misc Provisions</td>
+<td></td>
+</tr>
+<tr>
+<td>IncompleteFlag_MEMORY</td>
+<td>Incomplete Flag</td>
+<td></td>
+</tr>
+<tr>
+<td>ProcessingState_PROCSTAT</td>
+<td>Processing State</td>
+<td></td>
+</tr>
+<tr>
+<td>ValueAtRelease_RLWRT</td>
+<td>Value At Release</td>
+<td></td>
+</tr>
+<tr>
+<td>VersionnumberinPurchasing_REVNO</td>
+<td>Version number in Purchasing</td>
+<td></td>
+</tr>
+<tr>
+<td>SCMProcess_SCMPROC</td>
+<td>SCM Process</td>
+<td></td>
+</tr>
+<tr>
+<td>GoodsReceiptReason_REASON_CODE</td>
+<td>Goods Receipt Reason</td>
+<td></td>
+</tr>
+<tr>
+<td>CategoryIncompleteness_MEMORYTYPE</td>
+<td>Category Incompleteness</td>
+<td></td>
+</tr>
+<tr>
+<td>RetentionFlag_RETTP</td>
+<td>Retention Flag</td>
+<td></td>
+</tr>
+<tr>
+<td>ProcessIdentificationNumber_MSR_ID</td>
+<td>Process Identification Number</td>
+<td></td>
+</tr>
+<tr>
+<td>PartaContractHierarchy_HIERARCHY_EXISTS</td>
+<td>Part a Contract Hierarchy</td>
+<td></td>
+</tr>
+<tr>
+<td>ExchangeThresholdValue_THRESHOLD_EXISTS</td>
+<td>Exchange Threshold Value</td>
+<td></td>
+</tr>
+<tr>
+<td>LegalContractNumber_LEGAL_CONTRACT</td>
+<td>Legal Contract Number</td>
+<td></td>
+</tr>
+<tr>
+<td>ContractName_DESCRIPTION</td>
+<td>Contract Name</td>
+<td></td>
+</tr>
+<tr>
+<td>ReleaseDateContract_RELEASE_DATE</td>
+<td>Release Date Contract</td>
+<td></td>
+</tr>
+<tr>
+<td>Physicalhandover_HANDOVERLOC</td>
+<td>Physical handover</td>
+<td></td>
+</tr>
+<tr>
+<td>InternalKeyforForceElement_FORCE_ID</td>
+<td>Internal Key for Force Element</td>
+<td></td>
+</tr>
+<tr>
+<td>InternalCounter_FORCE_CNT</td>
+<td>Internal Counter</td>
+<td></td>
+</tr>
+<tr>
+<td>RelocationID_RELOC_ID</td>
+<td>Relocation ID</td>
+<td></td>
+</tr>
+<tr>
+<td>RelocationStepID_RELOC_SEQ_ID</td>
+<td>Relocation Step ID</td>
+<td></td>
+</tr>
+<tr>
+<td>Logicalsystem_SOURCE_LOGSYS</td>
+<td>Logical system</td>
+<td></td>
+</tr>
+<tr>
+<td>InterestcalculationFlag_VZSKZ</td>
+<td>Interest calculation Flag</td>
+<td></td>
+</tr>
+<tr>
+<td>SeasonalProcesingDocument_POHF_TYPE</td>
+<td>Seasonal Procesing Document</td>
+<td></td>
+</tr>
+<tr>
+<td>SameDeliveryDate_EQ_EINDT</td>
+<td>Same Delivery Date</td>
+<td></td>
+</tr>
+<tr>
+<td>SameReceivingPlant_EQ_WERKS</td>
+<td>Same Receiving Plant</td>
+<td></td>
+</tr>
+<tr>
+<td>FirmDealFlag_FIXPO</td>
+<td>Firm Deal Flag</td>
+<td></td>
+</tr>
+<tr>
+<td>TakeAccountPurchGroup_EKGRP_ALLOW</td>
+<td>Take Account Purch Group</td>
+<td></td>
+</tr>
+<tr>
+<td>TakeAccountPlants_WERKS_ALLOW</td>
+<td>Take Account Plants</td>
+<td></td>
+</tr>
+<tr>
+<td>TakeAccountContracts_CONTRACT_ALLOW</td>
+<td>Take Account Contracts</td>
+<td></td>
+</tr>
+<tr>
+<td>TakeAccountItemCategories_PSTYP_ALLOW</td>
+<td>Take Account Item Categories</td>
+<td></td>
+</tr>
+<tr>
+<td>TakeAccountFixedDate_FIXPO_ALLOW</td>
+<td>Take Account Fixed Date</td>
+<td></td>
+</tr>
+<tr>
+<td>ConsiderBudget_KEY_ID_ALLOW</td>
+<td>Consider Budget</td>
+<td></td>
+</tr>
+<tr>
+<td>TakeAccountAllocTableRelevance_AUREL_ALLOW</td>
+<td>Take Account Alloc Table Relevance</td>
+<td></td>
+</tr>
+<tr>
+<td>TakeAccountDlvyPeriod_DELPER_ALLOW</td>
+<td>Take Account Dlvy Period</td>
+<td></td>
+</tr>
+<tr>
+<td>TakeAccountDeliveryDate_EINDT_ALLOW</td>
+<td>Take Account Delivery Date</td>
+<td></td>
+</tr>
+<tr>
+<td>IncludeVendorSubrange_LTSNR_ALLOW</td>
+<td>Include Vendor Subrange</td>
+<td></td>
+</tr>
+<tr>
+<td>OTBCheckLevel_OTB_LEVEL</td>
+<td>OTB Check Level</td>
+<td></td>
+</tr>
+<tr>
+<td>OTBConditionType_OTB_COND_TYPE</td>
+<td>OTB Condition Type</td>
+<td></td>
+</tr>
+<tr>
+<td>UniqueNumberBudget_KEY_ID</td>
+<td>Unique Number Budget</td>
+<td></td>
+</tr>
+<tr>
+<td>RequiredBudget_OTB_VALUE</td>
+<td>Required Budget</td>
+<td></td>
+</tr>
+<tr>
+<td>OTBCurrency_OTB_CURR</td>
+<td>OTB Currency</td>
+<td></td>
+</tr>
+<tr>
+<td>ReservedBudgetforOTB_OTB_RES_VALUE</td>
+<td>Reserved Budget for OTB</td>
+<td></td>
+</tr>
+<tr>
+<td>SpecialReleaseBudget_OTB_SPEC_VALUE</td>
+<td>Special Release Budget</td>
+<td></td>
+</tr>
+<tr>
+<td>BudgetType_BUDG_TYPE</td>
+<td>Budget Type</td>
+<td></td>
+</tr>
+<tr>
+<td>OTBCheckStatus_OTB_STATUS</td>
+<td>OTB Check Status</td>
+<td></td>
+</tr>
+<tr>
+<td>ReasonFlagforOTBCheckStatus_OTB_REASON</td>
+<td>Reason Flag for OTB Check Status</td>
+<td></td>
+</tr>
+<tr>
+<td>TypeOTBCheck_CHECK_TYPE</td>
+<td>Type OTB Check</td>
+<td></td>
+</tr>
+<tr>
+<td>OTBRelevantContract_CON_OTB_REQ</td>
+<td>OTB Relevant Contract</td>
+<td></td>
+</tr>
+<tr>
+<td>OTBFlagLevelforContracts_CON_PREBOOK_LEV</td>
+<td>OTB Flag Level for Contracts</td>
+<td></td>
+</tr>
+<tr>
+<td>DistributionUsingTargetValueorItemData_CON_DISTR_LEV</td>
+<td>Distribution Using Target Value or Item Data</td>
+<td></td>
+</tr>
+<tr>
+<td>RFQtatus_STATU</td>
+<td>RFQ tatus</td>
+<td></td>
+</tr>
+<tr>
+<td>ChangeDate_AEDAT</td>
+<td>Change Date</td>
+<td></td>
+</tr>
+<tr>
+<td>ShortText_TXZ01</td>
+<td>Short Text</td>
+<td></td>
+</tr>
+<tr>
+<td>MaterialNumber_MATNR</td>
+<td>Material Number</td>
+<td></td>
+</tr>
+<tr>
+<td>MaterialNumber_EMATN</td>
+<td>Material Number</td>
+<td></td>
+</tr>
+<tr>
+<td>CompanyCode_BUKRS</td>
+<td>Company Code</td>
+<td></td>
+</tr>
+<tr>
+<td>Plant_WERKS</td>
+<td>Plant</td>
+<td></td>
+</tr>
+<tr>
+<td>StorageLocation_LGORT</td>
+<td>Storage Location</td>
+<td></td>
+</tr>
+<tr>
+<td>RequirementTrackingNumber_BEDNR</td>
+<td>Requirement Tracking Number</td>
+<td></td>
+</tr>
+<tr>
+<td>MaterialGroup_MATKL</td>
+<td>Material Group</td>
+<td></td>
+</tr>
+<tr>
+<td>NumberofPurchasingInfoRecord_INFNR</td>
+<td>Number of Purchasing Info Record</td>
+<td></td>
+</tr>
+<tr>
+<td>MaterialNumberVendor_IDNLF</td>
+<td>Material Number Vendor</td>
+<td></td>
+</tr>
+<tr>
+<td>TargetQuantity_KTMNG</td>
+<td>Target Quantity</td>
+<td></td>
+</tr>
+<tr>
+<td>POQuantity_MENGE</td>
+<td>PO Quantity</td>
+<td></td>
+</tr>
+<tr>
+<td>UoM_MEINS</td>
+<td>UoM</td>
+<td></td>
+</tr>
+<tr>
+<td>OrderPriceUnit_BPRME</td>
+<td>Order Price Unit</td>
+<td></td>
+</tr>
+<tr>
+<td>OrderUnitNumerator_BPUMZ</td>
+<td>Order Unit Numerator</td>
+<td></td>
+</tr>
+<tr>
+<td>OrderUnitDenominator_BPUMN</td>
+<td>Order Unit Denominator</td>
+<td></td>
+</tr>
+<tr>
+<td>NumeratorforConversionofOrderUnittoBaseUnit_UMREZ</td>
+<td>Numerator for Conversion of Order Unit to Base Unit</td>
+<td></td>
+</tr>
+<tr>
+<td>DenominatorforConversionofOrderUnittoBaseUnit_UMREN</td>
+<td>Denominator for Conversion of Order Unit to Base Unit</td>
+<td></td>
+</tr>
+<tr>
+<td>PriceUnit_PEINH</td>
+<td>Price Unit</td>
+<td></td>
+</tr>
+<tr>
+<td>DeadlineforSubmissionofBid_AGDAT</td>
+<td>Deadline for Submission of Bid</td>
+<td></td>
+</tr>
+<tr>
+<td>GoodsReceiptProcessingTimeinDays_WEBAZ</td>
+<td>Goods Receipt Processing Time in Days</td>
+<td></td>
+</tr>
+<tr>
+<td>Taxcode_MWSKZ</td>
+<td>Tax code</td>
+<td></td>
+</tr>
+<tr>
+<td>SettlementGroup1_BONUS</td>
+<td>Settlement Group 1</td>
+<td></td>
+</tr>
+<tr>
+<td>StockType_INSMK</td>
+<td>Stock Type</td>
+<td></td>
+</tr>
+<tr>
+<td>UpdateInfoRecordFlag_SPINF</td>
+<td>Update Info Record Flag</td>
+<td></td>
+</tr>
+<tr>
+<td>PricePrintout_PRSDR</td>
+<td>Price Printout</td>
+<td></td>
+</tr>
+<tr>
+<td>EstimatedPriceFlag_SCHPR</td>
+<td>Estimated Price Flag</td>
+<td></td>
+</tr>
+<tr>
+<td>NumberofReminders_MAHNZ</td>
+<td>Number of Reminders</td>
+<td></td>
+</tr>
+<tr>
+<td>NumberofDaysforFirstReminder_MAHN1</td>
+<td>Number of Days for First Reminder</td>
+<td></td>
+</tr>
+<tr>
+<td>NumberofDaysforSecondReminder_MAHN2</td>
+<td>Number of Days for Second Reminder</td>
+<td></td>
+</tr>
+<tr>
+<td>NumberofDaysforThirdReminder_MAHN3</td>
+<td>Number of Days for Third Reminder</td>
+<td></td>
+</tr>
+<tr>
+<td>OverdeliveryToleranceLimit_UEBTO</td>
+<td>Overdelivery Tolerance Limit</td>
+<td></td>
+</tr>
+<tr>
+<td>UnlimitedOverdeliveryAllowed_UEBTK</td>
+<td>Unlimited Overdelivery Allowed</td>
+<td></td>
+</tr>
+<tr>
+<td>UnderdeliveryToleranceLimit_UNTTO</td>
+<td>Underdelivery Tolerance Limit</td>
+<td></td>
+</tr>
+<tr>
+<td>ValuationType_BWTAR</td>
+<td>Valuation Type</td>
+<td></td>
+</tr>
+<tr>
+<td>ValuationCategory_BWTTY</td>
+<td>Valuation Category</td>
+<td></td>
+</tr>
+<tr>
+<td>RejectionFlag_ABSKZ</td>
+<td>Rejection Flag</td>
+<td></td>
+</tr>
+<tr>
+<td>InternalCommentonQuotation_AGMEM</td>
+<td>Internal Comment on Quotation</td>
+<td></td>
+</tr>
+<tr>
+<td>DeliveryCompletedFlag_ELIKZ</td>
+<td>Delivery Completed Flag</td>
+<td></td>
+</tr>
+<tr>
+<td>FinalInvoiceFlag_EREKZ</td>
+<td>Final Invoice Flag</td>
+<td></td>
+</tr>
+<tr>
+<td>ItemCategoryinPurchasingDocument_PSTYP</td>
+<td>Item Category in Purchasing Document</td>
+<td></td>
+</tr>
+<tr>
+<td>AccountAssignmentCategory_KNTTP</td>
+<td>Account Assignment Category</td>
+<td></td>
+</tr>
+<tr>
+<td>ConsumptionPosting_KZVBR</td>
+<td>Consumption Posting</td>
+<td></td>
+</tr>
+<tr>
+<td>DistributionFlagformultipleaccountassignment_VRTKZ</td>
+<td>Distribution Flag for multiple account assignment</td>
+<td></td>
+</tr>
+<tr>
+<td>PartialInvoiceFlag_TWRKZ</td>
+<td>Partial Invoice Flag</td>
+<td></td>
+</tr>
+<tr>
+<td>GoodsReceiptFlag_WEPOS</td>
+<td>Goods Receipt Flag</td>
+<td></td>
+</tr>
+<tr>
+<td>GoodsReceiptNonValuated_WEUNB</td>
+<td>Goods Receipt Non Valuated</td>
+<td></td>
+</tr>
+<tr>
+<td>InvoiceReceiptFlag_REPOS</td>
+<td>Invoice Receipt Flag</td>
+<td></td>
+</tr>
+<tr>
+<td>FlagGRBasedInvoiceVerification_WEBRE</td>
+<td>Flag GR Based Invoice Verification</td>
+<td></td>
+</tr>
+<tr>
+<td>OrderAcknowledgmentRequirement_KZABS</td>
+<td>Order Acknowledgment Requirement</td>
+<td></td>
+</tr>
+<tr>
+<td>OrderAcknowledgmentNumber_LABNR</td>
+<td>Order Acknowledgment Number</td>
+<td></td>
+</tr>
+<tr>
+<td>NumberofPrincipalPurchaseAgreement_KONNR</td>
+<td>Number of Principal Purchase Agreement</td>
+<td></td>
+</tr>
+<tr>
+<td>ItemNumberofPrincipalPurchaseAgreement_KTPNR</td>
+<td>Item Number of Principal Purchase Agreement</td>
+<td></td>
+</tr>
+<tr>
+<td>ReconciliationDateforAgreedCumulativeQuantity_ABDAT</td>
+<td>Reconciliation Date for Agreed Cumulative Quantity</td>
+<td></td>
+</tr>
+<tr>
+<td>AgreedCumulativeQuantity_ABFTZ</td>
+<td>Agreed Cumulative Quantity</td>
+<td></td>
+</tr>
+<tr>
+<td>FirmZone_ETFZ1</td>
+<td>Firm Zone</td>
+<td></td>
+</tr>
+<tr>
+<td>TradeOffZone_ETFZ2</td>
+<td>Trade Off Zone</td>
+<td></td>
+</tr>
+<tr>
+<td>FirmTradeOffZones_KZSTU</td>
+<td>Firm Trade Off Zones</td>
+<td></td>
+</tr>
+<tr>
+<td>ExclusioninOutlineAgreementItemwithMaterialClass_NOTKZ</td>
+<td>Exclusion in Outline Agreement Item with Material Class</td>
+<td></td>
+</tr>
+<tr>
+<td>BaseUnitofMeasure_LMEIN</td>
+<td>Base Unit of Measure</td>
+<td></td>
+</tr>
+<tr>
+<td>ShippingInstructions_EVERS</td>
+<td>Shipping Instructions</td>
+<td></td>
+</tr>
+<tr>
+<td>Nondeductibleinputtax_NAVNW</td>
+<td>Nondeductible input tax</td>
+<td></td>
+</tr>
+<tr>
+<td>Standardreleaseorderquantity_ABMNG</td>
+<td>Standard release order quantity</td>
+<td></td>
+</tr>
+<tr>
+<td>DateofPriceDetermination_PRDAT</td>
+<td>Date of Price Determination</td>
+<td></td>
+</tr>
+<tr>
+<td>PurchasingDocumentCategory_BSTYP</td>
+<td>Purchasing Document Category</td>
+<td></td>
+</tr>
+<tr>
+<td>Itemaffectscommitments_XOBLR</td>
+<td>Item affects commitments</td>
+<td></td>
+</tr>
+<tr>
+<td>Manualaddressnumberinpurchasingdocumentitem_ADRNR</td>
+<td>Manual address number in purchasing document item</td>
+<td></td>
+</tr>
+<tr>
+<td>ConditionGroupwithVendor_EKKOL</td>
+<td>Condition Group with Vendor</td>
+<td></td>
+</tr>
+<tr>
+<td>ItemDoesNotQualifyforCashDiscount_SKTOF</td>
+<td>Item Does Not Qualify for Cash Discount</td>
+<td></td>
+</tr>
+<tr>
+<td>Updategroupforstatisticsupdate_STAFO</td>
+<td>Update group for statistics update</td>
+<td></td>
+</tr>
+<tr>
+<td>PlannedDeliveryTimeinDays_PLIFZ</td>
+<td>Planned Delivery Time in Days</td>
+<td></td>
+</tr>
+<tr>
+<td>NetWeight_NTGEW</td>
+<td>Net Weight</td>
+<td></td>
+</tr>
+<tr>
+<td>UnitofWeight_GEWEI</td>
+<td>Unit of Weight</td>
+<td></td>
+</tr>
+<tr>
+<td>TaxJurisdiction_TXJCD</td>
+<td>Tax Jurisdiction</td>
+<td></td>
+</tr>
+<tr>
+<td>FlagPrintrelevantSchedulelinesexist_ETDRK</td>
+<td>Flag Print relevant Schedule lines exist</td>
+<td></td>
+</tr>
+<tr>
+<td>SpecialStockFlag_SOBKZ</td>
+<td>Special Stock Flag</td>
+<td></td>
+</tr>
+<tr>
+<td>Settlementreservationnumber_ARSNR</td>
+<td>Settlement reservation number</td>
+<td></td>
+</tr>
+<tr>
+<td>Itemnumberofthesettlementreservation_ARSPS</td>
+<td>Item number of the settlement reservation</td>
+<td></td>
+</tr>
+<tr>
+<td>QualityinspectionFlagcannotbechanged_INSNC</td>
+<td>Quality inspection Flag cannot be changed</td>
+<td></td>
+</tr>
+<tr>
+<td>ControlKeyforQualityManagementinProcurement_SSQSS</td>
+<td>Control Key for Quality Management in Procurement</td>
+<td></td>
+</tr>
+<tr>
+<td>CertificateType_ZGTYP</td>
+<td>Certificate Type</td>
+<td></td>
+</tr>
+<tr>
+<td>InternationalArticleNumber_EAN11</td>
+<td>International Article Number</td>
+<td></td>
+</tr>
+<tr>
+<td>ConfirmationControlKey_BSTAE</td>
+<td>Confirmation Control Key</td>
+<td></td>
+</tr>
+<tr>
+<td>RevisionLevel_REVLV</td>
+<td>Revision Level</td>
+<td></td>
+</tr>
+<tr>
+<td>Fund_GEBER</td>
+<td>Fund</td>
+<td></td>
+</tr>
+<tr>
+<td>FundsCenter_FISTL</td>
+<td>Funds Center</td>
+<td></td>
+</tr>
+<tr>
+<td>CommitmentItem_FIPOS</td>
+<td>Commitment Item</td>
+<td></td>
+</tr>
+<tr>
+<td>Businessareareportedtothepartner_KO_GSBER</td>
+<td>Business area reported to the partner</td>
+<td></td>
+</tr>
+<tr>
+<td>assumedbusinessareaofthebusinesspartner_KO_PARGB</td>
+<td>assumed business area of the business partner</td>
+<td></td>
+</tr>
+<tr>
+<td>ProfitCenter_KO_PRCTR</td>
+<td>Profit Center</td>
+<td></td>
+</tr>
+<tr>
+<td>PartnerProfitCenter_KO_PPRCTR</td>
+<td>Partner Profit Center</td>
+<td></td>
+</tr>
+<tr>
+<td>PricingDateControl_MEPRF</td>
+<td>Pricing Date Control</td>
+<td></td>
+</tr>
+<tr>
+<td>GrossWeight_BRGEW</td>
+<td>Gross Weight</td>
+<td></td>
+</tr>
+<tr>
+<td>Volume_VOLUM</td>
+<td>Volume</td>
+<td></td>
+</tr>
+<tr>
+<td>Volumeunit_VOLEH</td>
+<td>Volume unit</td>
+<td></td>
+</tr>
+<tr>
+<td>Incoterms1_INCO1</td>
+<td>Incoterms 1</td>
+<td></td>
+</tr>
+<tr>
+<td>Incoterms2_INCO2</td>
+<td>Incoterms 2</td>
+<td></td>
+</tr>
+<tr>
+<td>Advanceprocurement_VORAB</td>
+<td>Advance procurement</td>
+<td></td>
+</tr>
+<tr>
+<td>PriorVendor_KOLIF</td>
+<td>Prior Vendor</td>
+<td></td>
+</tr>
+<tr>
+<td>VendorSubrange_LTSNR</td>
+<td>Vendor Subrange</td>
+<td></td>
+</tr>
+<tr>
+<td>Packagenumber_PACKNO</td>
+<td>Package number</td>
+<td></td>
+</tr>
+<tr>
+<td>Invoicingplannumber_FPLNR</td>
+<td>Invoicing plan number</td>
+<td></td>
+</tr>
+<tr>
+<td>Itemisstatistical_STAPO</td>
+<td>Item is statistical</td>
+<td></td>
+</tr>
+<tr>
+<td>HigherLevelIteminPurchasingDocuments_UEBPO</td>
+<td>Higher Level Item in Purchasing Documents</td>
+<td></td>
+</tr>
+<tr>
+<td>LatestPossibleGoodsReceipt_LEWED</td>
+<td>Latest Possible Goods Receipt</td>
+<td></td>
+</tr>
+<tr>
+<td>Vendortobesupplied_EMLIF</td>
+<td>Vendor to be supplied</td>
+<td></td>
+</tr>
+<tr>
+<td>Subcontractingvendor_LBLKZ</td>
+<td>Subcontracting vendor</td>
+<td></td>
+</tr>
+<tr>
+<td>CrossPlantConfigurableMaterial_SATNR</td>
+<td>Cross Plant Configurable Material</td>
+<td></td>
+</tr>
+<tr>
+<td>MaterialCategory_ATTYP</td>
+<td>Material Category</td>
+<td></td>
+</tr>
+<tr>
+<td>Shippingtype_VSART</td>
+<td>Shipping type</td>
+<td></td>
+</tr>
+<tr>
+<td>Locationforaphysicalhandoverofgoods_HANDOVERLOC</td>
+<td>Location for a physical handover of goods</td>
+<td></td>
+</tr>
+<tr>
+<td>KanbanFlag_KANBA</td>
+<td>Kanban Flag</td>
+<td></td>
+</tr>
+<tr>
+<td>Numberofdeliveryaddress_ADRN2</td>
+<td>Number of delivery address</td>
+<td></td>
+</tr>
+<tr>
+<td>internalObjectNumber_CUOBJ</td>
+<td>internal Object Number</td>
+<td></td>
+</tr>
+<tr>
+<td>EvaluatedReceiptSettlement_XERSY</td>
+<td>Evaluated Receipt Settlement</td>
+<td></td>
+</tr>
+<tr>
+<td>StartDateforGRBasedSettlement_EILDT</td>
+<td>Start Date for GR Based Settlement</td>
+<td></td>
+</tr>
+<tr>
+<td>LastTransmission_DRDAT</td>
+<td>Last Transmission</td>
+<td></td>
+</tr>
+<tr>
+<td>Time_DRUHR</td>
+<td>Time</td>
+<td></td>
+</tr>
+<tr>
+<td>SequentialNumber_DRUNR</td>
+<td>Sequential Number</td>
+<td></td>
+</tr>
+<tr>
+<td>Promotion_AKTNR</td>
+<td>Promotion</td>
+<td></td>
+</tr>
+<tr>
+<td>AllocationTableNumber_ABELN</td>
+<td>Allocation Table Number</td>
+<td></td>
+</tr>
+<tr>
+<td>Itemnumberofallocationtable_ABELP</td>
+<td>Item number of allocation table</td>
+<td></td>
+</tr>
+<tr>
+<td>NumberofPoints_ANZPU</td>
+<td>Number of Points</td>
+<td></td>
+</tr>
+<tr>
+<td>Pointsunit_PUNEI</td>
+<td>Points unit</td>
+<td></td>
+</tr>
+<tr>
+<td>SeasonCategory_SAISO</td>
+<td>Season Category</td>
+<td></td>
+</tr>
+<tr>
+<td>SeasonYear_SAISJ</td>
+<td>Season Year</td>
+<td></td>
+</tr>
+<tr>
+<td>SettlementGroup2_EBON2</td>
+<td>Settlement Group 2</td>
+<td></td>
+</tr>
+<tr>
+<td>SettlementGroup3_EBON3</td>
+<td>Settlement Group 3</td>
+<td></td>
+</tr>
+<tr>
+<td>ItemRelevanttoSubsequentSettlement_EBONF</td>
+<td>Item Relevant to Subsequent Settlement</td>
+<td></td>
+</tr>
+<tr>
+<td>Materialledgeractivatedatmateriallevel_MLMAA</td>
+<td>Material ledger activated at material level</td>
+<td></td>
+</tr>
+<tr>
+<td>MinimumRemainingShelfLife_MHDRZ</td>
+<td>Minimum Remaining Shelf Life</td>
+<td></td>
+</tr>
+<tr>
+<td>RFQNumber_ANFNR</td>
+<td>RFQ Number</td>
+<td></td>
+</tr>
+<tr>
+<td>ItemNumberofRFQ_ANFPS</td>
+<td>Item Number of RFQ</td>
+<td></td>
+</tr>
+<tr>
+<td>OriginofConfiguration_KZKFG</td>
+<td>Origin of Configuration</td>
+<td></td>
+</tr>
+<tr>
+<td>Quotaarrangementusage_USEQU</td>
+<td>Quota arrangement usage</td>
+<td></td>
+</tr>
+<tr>
+<td>SpecialStockFlagforPhysicalStockTransfer_UMSOK</td>
+<td>Special Stock Flag for Physical Stock Transfer</td>
+<td></td>
+</tr>
+<tr>
+<td>PurchaseRequisitionNumber_BANFN</td>
+<td>Purchase Requisition Number</td>
+<td></td>
+</tr>
+<tr>
+<td>ItemNumberofPurchaseRequisition_BNFPO</td>
+<td>Item Number of Purchase Requisition</td>
+<td></td>
+</tr>
+<tr>
+<td>MaterialType_MTART</td>
+<td>Material Type</td>
+<td></td>
+</tr>
+<tr>
+<td>SubitemCategory_UPTYP</td>
+<td>Subitem Category</td>
+<td></td>
+</tr>
+<tr>
+<td>SubitemsExist_UPVOR</td>
+<td>Subitems Exist</td>
+<td></td>
+</tr>
+<tr>
+<td>Subtotal1frompricingprocedureforcondition_KZWI1</td>
+<td>Subtotal 1 from pricing procedure for condition</td>
+<td></td>
+</tr>
+<tr>
+<td>Subtotal2frompricingprocedureforcondition_KZWI2</td>
+<td>Subtotal 2 from pricing procedure for condition</td>
+<td></td>
+</tr>
+<tr>
+<td>Subtotal3frompricingprocedureforcondition_KZWI3</td>
+<td>Subtotal 3 from pricing procedure for condition</td>
+<td></td>
+</tr>
+<tr>
+<td>Subtotal4frompricingprocedureforcondition_KZWI4</td>
+<td>Subtotal 4 from pricing procedure for condition</td>
+<td></td>
+</tr>
+<tr>
+<td>Subtotal5frompricingprocedureforcondition_KZWI5</td>
+<td>Subtotal 5 from pricing procedure for condition</td>
+<td></td>
+</tr>
+<tr>
+<td>Subtotal6frompricingprocedureforcondition_KZWI6</td>
+<td>Subtotal 6 from pricing procedure for condition</td>
+<td></td>
+</tr>
+<tr>
+<td>Processingkeyforsubitems_SIKGR</td>
+<td>Processing key for subitems</td>
+<td></td>
+</tr>
+<tr>
+<td>MaximumCumulativeMaterialGoAheadQuantity_MFZHI</td>
+<td>Maximum Cumulative Material Go Ahead Quantity</td>
+<td></td>
+</tr>
+<tr>
+<td>MaximumCumulativeProductionGoAheadQuantity_FFZHI</td>
+<td>Maximum Cumulative Production Go Ahead Quantity</td>
+<td></td>
+</tr>
+<tr>
+<td>ReturnsItem_RETPO</td>
+<td>Returns Item</td>
+<td></td>
+</tr>
+<tr>
+<td>RelevanttoAllocationTable_AUREL</td>
+<td>Relevant to Allocation Table</td>
+<td></td>
+</tr>
+<tr>
+<td>ReasonforOrdering_BSGRU</td>
+<td>Reason for Ordering</td>
+<td></td>
+</tr>
+<tr>
+<td>DeliveryTypeforReturnstoVendors_LFRET</td>
+<td>Delivery Type for Returns to Vendors</td>
+<td></td>
+</tr>
+<tr>
+<td>Materialfreightgroup_MFRGR</td>
+<td>Material freight group</td>
+<td></td>
+</tr>
+<tr>
+<td>Materialqualifiesfordiscountinkind_NRFHG</td>
+<td>Material qualifies for discount in kind</td>
+<td></td>
+</tr>
+<tr>
+<td>ReleaseCreationProfile_ABUEB</td>
+<td>Release Creation Profile</td>
+<td></td>
+</tr>
+<tr>
+<td>NextForecastDeliveryScheduleTransmission_NLABD</td>
+<td>Next Forecast Delivery Schedule Transmission</td>
+<td></td>
+</tr>
+<tr>
+<td>NextJITDeliveryScheduleTransmission_NFABD</td>
+<td>Next JIT Delivery Schedule Transmission</td>
+<td></td>
+</tr>
+<tr>
+<td>ValuationofSpecialStock_KZBWS</td>
+<td>Valuation of Special Stock</td>
+<td></td>
+</tr>
+<tr>
+<td>FlagItemRelevanttoJITDeliverySchedules_FABKZ</td>
+<td>Flag Item Relevant to JIT Delivery Schedules</td>
+<td></td>
+</tr>
+<tr>
+<td>InflationIndex_J_1AINDXP</td>
+<td>Inflation Index</td>
+<td></td>
+</tr>
+<tr>
+<td>InflationIndexDate_J_1AIDATEP</td>
+<td>Inflation Index Date</td>
+<td></td>
+</tr>
+<tr>
+<td>ManufacturerPartProfile_MPROF</td>
+<td>Manufacturer Part Profile</td>
+<td></td>
+</tr>
+<tr>
+<td>OutwardDeliveryCompletedFlag_EGLKZ</td>
+<td>Outward Delivery Completed Flag</td>
+<td></td>
+</tr>
+<tr>
+<td>StockTransfer_KZTLF</td>
+<td>Stock Transfer</td>
+<td></td>
+</tr>
+<tr>
+<td>Unitsofmeasureusage_KZFME</td>
+<td>Units of measure usage</td>
+<td></td>
+</tr>
+<tr>
+<td>RoundingProfile_RDPRF</td>
+<td>Rounding Profile</td>
+<td></td>
+</tr>
+<tr>
+<td>StandardVariant_TECHS</td>
+<td>Standard Variant</td>
+<td></td>
+</tr>
+<tr>
+<td>Configurationchanged_CHG_SRV</td>
+<td>Configuration changed</td>
+<td></td>
+</tr>
+<tr>
+<td>Noinvoiceforthisitemalthoughnotfreeofcharge_CHG_FPLNR</td>
+<td>No invoice for this item although not free of charge</td>
+<td></td>
+</tr>
+<tr>
+<td>ManufacturerPartNumber_MFRPN</td>
+<td>Manufacturer Part Number</td>
+<td></td>
+</tr>
+<tr>
+<td>NumberofaManufacturer_MFRNR</td>
+<td>Number of a Manufacturer</td>
+<td></td>
+</tr>
+<tr>
+<td>Externalmanufacturercodenameornumber_EMNFR</td>
+<td>External manufacturer code name or number</td>
+<td></td>
+</tr>
+<tr>
+<td>ItemblockedforSDdelivery_NOVET</td>
+<td>Item blocked for SD delivery</td>
+<td></td>
+</tr>
+<tr>
+<td>NameofRequester_AFNAM</td>
+<td>Name of Requester</td>
+<td></td>
+</tr>
+<tr>
+<td>Timezoneofrecipientlocation_TZONRC</td>
+<td>Timezone of recipient location</td>
+<td></td>
+</tr>
+<tr>
+<td>PeriodFlagforShelfLifeExpirationDate_IPRKZ</td>
+<td>Period Flag for Shelf Life Expiration Date</td>
+<td></td>
+</tr>
+<tr>
+<td>FlagforServiceBasedInvoiceVerification_LEBRE</td>
+<td>Flag for Service Based Invoice Verification</td>
+<td></td>
+</tr>
+<tr>
+<td>MRPArea_BERID</td>
+<td>MRP Area</td>
+<td></td>
+</tr>
+<tr>
+<td>Conditionsforitemalthoughnoinvoice_XCONDITIONS</td>
+<td>Conditions for item although no invoice</td>
+<td></td>
+</tr>
+<tr>
+<td>APOasPlanningSystem_APOMS</td>
+<td>APO as Planning System</td>
+<td></td>
+</tr>
+<tr>
+<td>PostingLogicintheCaseofStockTransfers_CCOMP</td>
+<td>Posting Logic in the Case of Stock Transfers</td>
+<td></td>
+</tr>
+<tr>
+<td>Grant_GRANT_NBR</td>
+<td>Grant</td>
+<td></td>
+</tr>
+<tr>
+<td>FunctionalArea_FKBER</td>
+<td>Functional Area</td>
+<td></td>
+</tr>
+<tr>
+<td>StatusofPurchasingDocumentItem_STATUS</td>
+<td>Status of Purchasing Document Item</td>
+<td></td>
+</tr>
+<tr>
+<td>IssuingStorageLocationforStockTransportOrder_RESLO</td>
+<td>Issuing Storage Location for Stock Transport Order</td>
+<td></td>
+</tr>
+<tr>
+<td>DocumentNumberforEarmarkedFunds_KBLNR</td>
+<td>Document Number for Earmarked Funds</td>
+<td></td>
+</tr>
+<tr>
+<td>EarmarkedFundsDocumentItem_KBLPOS</td>
+<td>Earmarked Funds Document Item</td>
+<td></td>
+</tr>
+<tr>
+<td>AcceptanceAtOrigin_WEORA</td>
+<td>Acceptance At Origin</td>
+<td></td>
+</tr>
+<tr>
+<td>ServiceBasedCommitment_SRV_BAS_COM</td>
+<td>Service Based Commitment</td>
+<td></td>
+</tr>
+<tr>
+<td>RequirementUrgency_PRIO_URG</td>
+<td>Requirement Urgency</td>
+<td></td>
+</tr>
+<tr>
+<td>RequirementPriority_PRIO_REQ</td>
+<td>Requirement Priority</td>
+<td></td>
+</tr>
+<tr>
+<td>Receivingpoint_EMPST</td>
+<td>Receiving point</td>
+<td></td>
+</tr>
+<tr>
+<td>DifferentialInvoicing_DIFF_INVOICE</td>
+<td>Differential Invoicing</td>
+<td></td>
+</tr>
+<tr>
+<td>RiskRelevancyinPurchasing_TRMRISK_RELEVANT</td>
+<td>Risk Relevancy in Purchasing</td>
+<td></td>
+</tr>
+<tr>
+<td>Reasonforrejectionofquotationsandsalesorders_SPE_ABGRU</td>
+<td>Reason for rejection of quotations and sales orders</td>
+<td></td>
+</tr>
+<tr>
+<td>CRMSalesOrderNumberforTPOP_SPE_CRM_SO</td>
+<td>CRM Sales Order Number for TPOP</td>
+<td></td>
+</tr>
+<tr>
+<td>CRMSalesOrderItemNumberinTPOP_SPE_CRM_SO_ITEM</td>
+<td>CRM Sales Order Item Number in TPOP</td>
+<td></td>
+</tr>
+<tr>
+<td>CRMReferenceOrderNumberforTPOP_SPE_CRM_REF_SO</td>
+<td>CRM Reference Order Number for TPOP</td>
+<td></td>
+</tr>
+<tr>
+<td>CRMReferenceSalesOrderItemNumberinTPOP_SPE_CRM_REF_ITEM</td>
+<td>CRM Reference Sales Order Item Number in TPOP</td>
+<td></td>
+</tr>
+<tr>
+<td>BillingRelevanceCRM_SPE_CRM_FKREL</td>
+<td>Billing Relevance CRM</td>
+<td></td>
+</tr>
+<tr>
+<td>LastChangerSystemType_SPE_CHNG_SYS</td>
+<td>Last Changer System Type</td>
+<td></td>
+</tr>
+<tr>
+<td>StockTypeofSourceStorageLocationinSTO_SPE_INSMK_SRC</td>
+<td>Stock Type of Source Storage Location in STO</td>
+<td></td>
+</tr>
+<tr>
+<td>CQControlType_SPE_CQ_CTRLTYPE</td>
+<td>CQ Control Type</td>
+<td></td>
+</tr>
+<tr>
+<td>NoTransmissionofCumulativeQuantitiesinSARelease_SPE_CQ_NOCQ</td>
+<td>No Transmission of Cumulative Quantities in SA Release</td>
+<td></td>
+</tr>
+<tr>
+<td>GoodsReceiptReasonCode_REASON_CODE</td>
+<td>Goods Receipt Reason Code</td>
+<td></td>
+</tr>
+<tr>
+<td>CumulativeGoodsReceipts_CQU_SAR</td>
+<td>Cumulative Goods Receipts</td>
+<td></td>
+</tr>
+<tr>
+<td>Numberofserialnumbers_ANZSN</td>
+<td>Number of serial numbers</td>
+<td></td>
+</tr>
+<tr>
+<td>EWMDeliveryBasedToleranceCheck_SPE_EWM_DTC</td>
+<td>EWM Delivery Based Tolerance Check</td>
+<td></td>
+</tr>
+<tr>
+<td>ItemNumberLength_EXLIN</td>
+<td>Item Number Length</td>
+<td></td>
+</tr>
+<tr>
+<td>ExternalSorting_EXSNR</td>
+<td>External Sorting</td>
+<td></td>
+</tr>
+<tr>
+<td>ExternalHierarchyCategory_EHTYP</td>
+<td>External Hierarchy Category</td>
+<td></td>
+</tr>
+<tr>
+<td>RetentioninPercent_RETPC</td>
+<td>Retention in Percent</td>
+<td></td>
+</tr>
+<tr>
+<td>DownPaymentFlag_DPTYP</td>
+<td>Down Payment Flag</td>
+<td></td>
+</tr>
+<tr>
+<td>DownPaymentPercentage_DPPCT</td>
+<td>Down Payment Percentage</td>
+<td></td>
+</tr>
+<tr>
+<td>DownPaymentinDocumentCurrency_DPAMT</td>
+<td>Down Payment in Document Currency</td>
+<td></td>
+</tr>
+<tr>
+<td>DueDateforDownPayment_DPDAT</td>
+<td>Due Date for Down Payment</td>
+<td></td>
+</tr>
+<tr>
+<td>StoreReturnwithInboundandOutboundDelivery_FLS_RSTO</td>
+<td>Store Return with Inbound and Outbound Delivery</td>
+<td></td>
+</tr>
+<tr>
+<td>DocumentNumberofExternalDocument_EXT_RFX_NUMBER</td>
+<td>Document Number of External Document</td>
+<td></td>
+</tr>
+<tr>
+<td>ItemNumberofExternalDocument_EXT_RFX_ITEM</td>
+<td>Item Number of External Document</td>
+<td></td>
+</tr>
+<tr>
+<td>LogicalSystem_EXT_RFX_SYSTEM</td>
+<td>Logical System</td>
+<td></td>
+</tr>
+<tr>
+<td>CentralContract_SRM_CONTRACT_ID</td>
+<td>Central Contract</td>
+<td></td>
+</tr>
+<tr>
+<td>CentralContractItemNumber_SRM_CONTRACT_ITM</td>
+<td>Central Contract Item Number</td>
+<td></td>
+</tr>
+<tr>
+<td>BlockingReasonID_BLK_REASON_ID</td>
+<td>Blocking Reason ID</td>
+<td></td>
+</tr>
+<tr>
+<td>BlockingReasonText_BLK_REASON_TXT</td>
+<td>Blocking Reason Text</td>
+<td></td>
+</tr>
+<tr>
+<td>RealTimeConsumptionPostingofSubcontractingComponents_ITCONS</td>
+<td>Real Time Consumption Posting of Subcontracting Components</td>
+<td></td>
+</tr>
+<tr>
+<td>DeliveryDateandQuantityFixed_FIXMG</td>
+<td>Delivery Date and Quantity Fixed</td>
+<td></td>
+</tr>
+<tr>
+<td>FlagforGIbasedgoodsreceipt_WABWE</td>
+<td>Flag for GI based goods receipt</td>
+<td></td>
+</tr>
+<tr>
+<td>TaxCodeAutomaticallyDetermined_TC_AUT_DET</td>
+<td>Tax Code Automatically Determined</td>
+<td></td>
+</tr>
+<tr>
+<td>ManualTaxCodeReason_MANUAL_TC_REASON</td>
+<td>Manual Tax Code Reason</td>
+<td></td>
+</tr>
+<tr>
+<td>TaxIncentiveType_FISCAL_INCENTIVE</td>
+<td>Tax Incentive Type</td>
+<td></td>
+</tr>
+<tr>
+<td>TaxSubject_TAX_SUBJECT_ST</td>
+<td>Tax Subject</td>
+<td></td>
+</tr>
+<tr>
+<td>IncentiveID_FISCAL_INCENTIVE_ID</td>
+<td>Incentive ID</td>
+<td></td>
+</tr>
+<tr>
+<td>AdviceCode_ADVCODE</td>
+<td>Advice Code</td>
+<td></td>
+</tr>
+<tr>
+<td>FMBudgetPeriod_BUDGET_PD</td>
+<td>FM Budget Period</td>
+<td></td>
+</tr>
+<tr>
+<td>AcceptancePeriod_EXCPE</td>
+<td>Acceptance Period</td>
+<td></td>
+</tr>
+<tr>
+<td>IUIDRelevant_IUID_RELEVANT</td>
+<td>IUID Relevant</td>
+<td></td>
+</tr>
+<tr>
+<td>RetailPriceRelevant_MRPIND</td>
+<td>Retail Price Relevant</td>
+<td></td>
+</tr>
+<tr>
+<td>ReferenceSiteForPurchasing_REFSITE</td>
+<td>Reference Site For Purchasing</td>
+<td></td>
+</tr>
+<tr>
+<td>Typeofsubcontracting_SERRU</td>
+<td>Type of subcontracting</td>
+<td></td>
+</tr>
+<tr>
+<td>SerialNumberProfile_SERNP</td>
+<td>Serial Number Profile</td>
+<td></td>
+</tr>
+<tr>
+<td>SpecialstockFlagSubcontracting_DISUB_SOBKZ</td>
+<td>Special stock Flag Subcontracting</td>
+<td></td>
+</tr>
+<tr>
+<td>WBSElement_DISUB_PSPNR</td>
+<td>WBS Element</td>
+<td></td>
+</tr>
+<tr>
+<td>CustomerNumber_DISUB_KUNNR</td>
+<td>Customer Number</td>
+<td></td>
+</tr>
+<tr>
+<td>SalesandDistributionDocumentNumber_DISUB_VBELN</td>
+<td>Sales and Distribution Document Number</td>
+<td></td>
+</tr>
+<tr>
+<td>ItemnumberoftheSDdocument_DISUB_POSNR</td>
+<td>Item number of the SD document</td>
+<td></td>
+</tr>
+<tr>
+<td>Ownerofstock_DISUB_OWNER</td>
+<td>Owner of stock</td>
+<td></td>
+</tr>
+<tr>
+<td>ReferenceItemforRemainingQtyCancellation_REF_ITEM</td>
+<td>Reference Item for Remaining Qty Cancellation</td>
+<td></td>
+</tr>
+<tr>
+<td>OriginProfile_SOURCE_ID</td>
+<td>Origin Profile</td>
+<td></td>
+</tr>
+<tr>
+<td>KeyinSourceSystem_SOURCE_KEY</td>
+<td>Key in Source System</td>
+<td></td>
+</tr>
+<tr>
+<td>FlagforPuttingBackfromGroupedPODocument_PUT_BACK</td>
+<td>Flag for Putting Back from Grouped PO Document</td>
+<td></td>
+</tr>
+<tr>
+<td>OrderListItemNumber_POL_ID</td>
+<td>Order List Item Number</td>
+<td></td>
+</tr>
+<tr>
+<td>PurchaseOrderforConsignment_CONS_ORDER</td>
+<td>Purchase Order for Consignment</td>
+<td></td>
+</tr>
+<tr>
+<td>YearOfChangeDate_AEDAT</td>
+<td>Year Of Change Date</td>
+<td></td>
+</tr>
+<tr>
+<td>MonthOfChangeDate_AEDAT</td>
+<td>Month Of Change Date</td>
+<td></td>
+</tr>
+<tr>
+<td>WeekOfChangeDate_AEDAT</td>
+<td>Week Of Change Date</td>
+<td></td>
+</tr>
+<tr>
+<td>QuarterOfChangeDate_AEDAT</td>
+<td>Quarter Of Change Date</td>
+<td></td>
+</tr>
+<tr>
+<td>YearOfPurchasingDocumentDate_BEDAT</td>
+<td>Year Of Purchasing Document Date</td>
+<td></td>
+</tr>
+<tr>
+<td>MonthOfPurchasingDocumentDate_BEDAT</td>
+<td>Month Of Purchasing Document Date</td>
+<td></td>
+</tr>
+<tr>
+<td>WeekOfPurchasingDocumentDate_BEDAT</td>
+<td>Week Of Purchasing Document Date</td>
+<td></td>
+</tr>
+<tr>
+<td>QuarterOfPurchasingDocumentDate_BEDAT</td>
+<td>Quarter Of Purchasing Document Date</td>
+<td></td>
+</tr>
+<tr>
+<td>NetPrice_NETPR</td>
+<td>Net Price</td>
+<td></td>
+</tr>
+<tr>
+<td>NetOrderValueinPOCurrency_NETWR</td>
+<td>Net Order Value in PO Currency</td>
+<td></td>
+</tr>
+<tr>
+<td>GrossOrderValueinPOcurrency_BRTWR</td>
+<td>Gross Order Value in PO currency</td>
+<td></td>
+</tr>
+<tr>
+<td>TargetValueforOutlineAgreementinDocumentCurrency_ZWERT</td>
+<td>Target Value for Outline Agreement in Document Currency</td>
+<td></td>
+</tr>
+<tr>
+<td>Effectivevalueofitem_EFFWR</td>
+<td>Effective value of item</td>
+<td></td>
+</tr>
+<tr>
+<td>Currentlynotused_GNETWR</td>
+<td>Currently not used</td>
+<td></td>
+</tr>
+<tr>
+<td>Rebatebasis1_BONBA</td>
+<td>Rebate basis 1</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        ¿Fue útil esta página?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              ¡Gracias por tus comentarios!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              ¡Gracias por tus comentarios! Ayúdanos a mejorar esta página utilizando nuestro sistema de comentarios a continuación.                                                    
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+  <h2 id="__comments">Comentarios</h2>
+  <!-- Insert generated snippet here -->
+    <script src="https://giscus.app/client.js"
+        data-repo="CortexCouncilWorkspace/CCWSite"
+        data-repo-id="R_kgDOLkRYyA"
+        data-category="General"
+        data-category-id="DIC_kwDOLkRYyM4CePsO"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="es"
+        crossorigin="anonymous"
+        async>
+    </script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+
+<!-- Comment system -->
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/CortexCouncilWorkspace" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.sections", "navigation.path", "search.highlight", "content.tabs.link"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.bd41221c.min.js"></script>
+      
+    
+  </body>
+</html>

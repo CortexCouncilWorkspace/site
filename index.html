@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cortex Council Workspace</title>
+  <script>
+    // Get the browser's language
+    var browserLang = navigator.language || navigator.userLanguage;
+
+    // Redirect to the appropriate language folder
+    if (browserLang.startsWith("en")) {
+      window.location.href = "en/";
+    } else if (browserLang.startsWith("pt-BR")) {
+      window.location.href = "pt-BR/";
+    } else if (browserLang.startsWith("es")) {
+      window.location.href = "es/";
+    } else {
+      // Redirect to English if the browser language is not one of the site's available languages
+      window.location.href = "en/";
+    }
+  </script>
+</head>
+<body>
+  <h1>Redirecting...</h1>
+</body>
+</html>
